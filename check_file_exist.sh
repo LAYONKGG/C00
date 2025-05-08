@@ -1,4 +1,3 @@
-“`bash
 #!/data/data/com.termux/files/usr/bin/bash
 read -p "Entrez le nom du fichier à vérifier : " filename
 if [ -z "$filename" ]; then
