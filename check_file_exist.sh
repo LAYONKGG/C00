@@ -7,4 +7,3 @@ elif [ -f "$filename" ]; then
 else
     echo "Le fichier '$filename' n'existe pas."
 fi
-```
