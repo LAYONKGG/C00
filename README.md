@@ -1,46 +1,64 @@
-```markdown
-Projet C00 – Scripts Bash de base
+Projet C00 – Scripts Bash
 
-Ce projet contient 5 scripts écrits en Bash, réalisés dans le cadre de l'apprentissage de l'utilisation du terminal (via Termux mobile) et des commandes de base en ligne de commande sous Linux.
+Présentation
 
----
+Ce dépôt contient une série de scripts Bash réalisés dans le cadre du projet *C00* de *Codeloccol*. L'objectif est de maîtriser les bases de la programmation en Bash à travers des exercices pratiques.
 
-📚 Liste des exercices
+Prérequis
 
-1. `hello_world.sh`
-> Affiche le message *"Hello, World!"* dans le terminal.  
-✅ Objectif : prise en main du terminal et du scripting Bash.
+- *Système* : Unix/Linux (ou Termux sur Android)
+- *Shell* : Bash
+- *Permissions* : Assurez-vous que les scripts sont exécutables. Si nécessaire, utilisez la commande :
+  ```bash
+  chmod +x script_name.sh
+  ```
 
-2. `current_datetime.sh`
-> Affiche la *date et l’heure actuelles* au format `YYYY-MM-DD HH:MM:SS`.  
-✅ Objectif : manipuler la commande `date`.
+Liste des exercices
 
-3. `list_files.sh`
-> Affiche la *liste détaillée* des fichiers du répertoire courant, y compris les fichiers cachés.  
-✅ Objectif : comprendre et utiliser `ls -la`.
+1. Hello, World!
+- *Fichier* : `hello_world.sh`
+- *Description* : Affiche le message "Hello, World!" à l'écran.
+- *Exécution* :
+  ```bash
+  ./hello_world.sh
+  ```
 
-4. `create_directory.sh`
-> Crée un *répertoire nommé `test_directory`* dans le répertoire courant.  
-✅ Objectif : utiliser la commande `mkdir`.
+2. Date et Heure Actuelles
+- *Fichier* : `current_datetime.sh`
+- *Description* : Affiche la date et l'heure actuelles au format `YYYY-MM-DD HH:MM:SS`.
+- *Exécution* :
+  ```bash
+  ./current_datetime.sh
+  ```
 
-5. `check_file_exist.sh`
-> Demande à l'utilisateur un nom de fichier, puis affiche s’il *existe ou non*.  
-✅ Objectif : utiliser les conditions `[ -f fichier ]` en Bash.
-🛠️ Instructions
-- Tous les scripts commencent par le shebang adapté à Termux :  
-  `#!/data/data/com.termux/files/usr/bin/bash`
-- Tous les fichiers sont *exécutables* (`chmod +x fichier.sh`)
-- Chaque script est *commenté* pour expliquer son fonctionnement
-🚀 Exécution dans Termux
+3. Lister les Fichiers
+- *Fichier* : `list_files.sh`
+- *Description* : Affiche la liste de tous les fichiers du répertoire courant, y compris les fichiers cachés, avec des détails.
+- *Exécution* :
+  ```bash
+  ./list_files.sh
+  ```
 
-```bash
-chmod +x script.sh
-./script.sh
-```
+4. Créer un Répertoire
+- *Fichier* : `create_directory.sh`
+- *Description* : Crée un répertoire nommé `test_directory`.
+- *Exécution* :
+  ```bash
+  ./create_directory.sh
+  ```
 
----
+5. Vérifier l'Existence d'un Fichier
+- *Fichier* : `check_file_exist.sh`
+- *Description* : Demande à l'utilisateur de saisir le nom d'un fichier et vérifie s'il existe.
+- *Exécution* :
+  ```bash
+  ./check_file_exist.sh
+  ```
 
-💻 Auteur
+Commentaires dans les Scripts
 
-> Réalisé avec Termux mobile par LAYONKGG  
-> GitHub : [github.com/LAYONKGG](https://github.com/LAYONKGG)
+Chaque script contient des commentaires expliquant son fonctionnement pour faciliter la compréhension.
+
+Contact
+
+Pour toute question ou suggestion, veuillez contacter mlaouali374@gmail.com. 
