@@ -3,10 +3,4 @@
 echo "Entrez le nom du fichier à vérifier : "
 read filename
 
-if [ -z "$filename" ]; then
-    echo "Aucun nom de fichier saisi."
-elif [ -f "$filename" ]; then
-    echo "Le fichier '$filename' existe."
-else
-    echo "Le fichier '$filename' n'existe pas."
-fi
+[ -f "$filename" ] && echo "Le fichier '$filename' existe." || echo "Le fichier '$filename' n'existe pas."
