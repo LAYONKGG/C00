@@ -3,4 +3,8 @@
 echo "Entrez le nom du fichier à vérifier : "
 read filename
 
-[ -f "$filename" ] && echo "Le fichier '$filename' existe." || echo "Le fichier '$filename' n'existe pas."
+if [ -f "$filename" ]; then
+    echo "Le fichier '$filename' existe."
+else
+    echo "Le fichier '$filename' n'existe pas."
+fi
